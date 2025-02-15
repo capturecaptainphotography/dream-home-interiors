@@ -31,3 +31,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+// Show Loader
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  loader.style.display = 'none'; // Hide loader after page loads
+});
