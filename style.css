@@ -26,7 +26,7 @@ html {
   
   /* Header */
   header {
-    background: #ff6f61;
+    background: #ebe843;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -101,7 +101,7 @@ html {
   
   .btn {
     background: #fff;
-    color: #ff6f61;
+    color: #ebe843;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 5px;
@@ -157,7 +157,7 @@ html {
 }
 
 .close-btn:hover {
-  color: #ff6f61;
+  color: #ebe843;
 }
 
 .popup input,
@@ -314,13 +314,13 @@ html {
 .card-icon i {
   font-size: 3rem; /* Larger icon size */
   margin-bottom: 1rem;
-  color: #ff6f61; /* Match brand color */
+  color: #ebe843; /* Match brand color */
 }
 
 .construction-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #ff6f61;
+  color: #ebe843;
 }
 
 .construction-card p {
@@ -386,7 +386,7 @@ html {
 .card-content h3 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
-  color: #ff6f61;
+  color: #ebe843;
 }
 
 .card-content h3 i {
@@ -458,7 +458,7 @@ html {
 .real-estate-card .icon {
   font-size: 3rem; /* Adjust icon size */
   margin-bottom: 1rem;
-  color: #ff6f61; /* Icon color */
+  color: #ebe843; /* Icon color */
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -470,7 +470,7 @@ html {
 .real-estate-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #ff6f61;
+  color: #ebe843;
 }
 
 .real-estate-card p {
@@ -560,7 +560,7 @@ html {
 .gallery-item .overlay h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: #ff6f61;
+  color: #ebe843;
 }
 
 .gallery-item .overlay p {
@@ -586,7 +586,7 @@ html {
   /* Contact Section */
 .contact {
   padding: 4rem 0;
-  background: linear-gradient(135deg, #ff6f61, #e55d50);
+  background: linear-gradient(135deg, #ebe843, #e55d50);
   color: #fff;
 }
 
@@ -685,7 +685,7 @@ html {
 
 #contact-form button {
   background: #fff;
-  color: #ff6f61;
+  color: #ebe843;
   padding: 1rem;
   border: none;
   border-radius: 5px;
@@ -744,7 +744,7 @@ html {
 .spinner div {
   width: 15px;
   height: 15px;
-  background: #ff6f61;
+  background: #ebe843;
   border-radius: 50%;
   animation: bounce 1s infinite alternate;
 }
