@@ -15,6 +15,9 @@ html {
     line-height: 1.6;
     color: #333;
     scroll-behavior: smooth; /* Enable smooth scrolling */
+    
+  background: linear-gradient(135deg, #eaebc2,#e6b002);
+ 
 
   }
   
@@ -26,7 +29,7 @@ html {
   
   /* Header */
   header {
-    background: #ebe843;
+    background: #e6b002;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -52,7 +55,7 @@ html {
   
   header nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-weight: bold;
     transition: color 0.3s ease;
   }
@@ -76,11 +79,11 @@ html {
   
   /* Hero Section */
   .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img4.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/photo_75_2025-02-16_01-48-34.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
   }
   
@@ -100,8 +103,8 @@ html {
   }
   
   .btn {
-    background: #fff;
-    color: #ebe843;
+    background: #757272;
+    color: #e6b002;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 5px;
@@ -111,7 +114,7 @@ html {
   
   .btn:hover {
     background: #e55d50;
-    color: #fff;
+    color: #000000;
   }
   
   /* Responsive Hero Section */
@@ -139,13 +142,18 @@ html {
 }
 
 .popup-content {
-  background: #fff;
+  background: #2e2e2e;
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
   position: relative;
   width: 100%;
   max-width: 400px;
+
+}
+.popup-content h2{
+  color: #ffffff;
+
 }
 
 .close-btn {
@@ -154,10 +162,11 @@ html {
   right: 10px;
   font-size: 1.5rem;
   cursor: pointer;
+  color: #ddd;
 }
 
 .close-btn:hover {
-  color: #ebe843;
+  color: #e6b002;
 }
 
 .popup input,
@@ -172,7 +181,7 @@ html {
   /* Services Section */
 .services {
   padding: 4rem 0;
-  background: #f9f9f9;
+ 
   text-align: center;
 }
 
@@ -196,7 +205,7 @@ html {
 }
 
 .card {
-  background: #fff;
+  background: #282828;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -232,7 +241,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 111, 97, 0.8); /* Gradient overlay */
+  background: rgba(255, 255, 255, 0.849); /* Gradient overlay */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,18 +255,18 @@ html {
 
 .overlay i {
   font-size: 3rem;
-  color: #fff;
+  color: #000000;
 }
 
 .card h3 {
   font-size: 1.5rem;
   margin: 1rem 0;
-  color: #333;
+  color: #ffffff;
 }
 
 .card p {
   font-size: 1rem;
-  color: #666;
+  color: #b2a9a9;
   padding: 0 1rem 1rem;
 }
 
@@ -275,7 +284,6 @@ html {
 /* Constructions Section */
 .constructions {
   padding: 4rem 0;
-  background: #f9f9f9;
   text-align: center;
 }
 
@@ -298,7 +306,7 @@ html {
 }
 
 .construction-card {
-  background: #fff;
+  background: #282828;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -314,13 +322,13 @@ html {
 .card-icon i {
   font-size: 3rem; /* Larger icon size */
   margin-bottom: 1rem;
-  color: #ebe843; /* Match brand color */
+  color: #e6b002; /* Match brand color */
 }
 
 .construction-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #ebe843;
+  color: #e6b002;
 }
 
 .construction-card p {
@@ -331,7 +339,6 @@ html {
   /* Interior & Exterior Section */
 .interior-exterior {
   padding: 6rem 0;
-  background: linear-gradient(135deg, #f9f9f9, #eaeaea);
 }
 
 .interior-exterior h2 {
@@ -355,7 +362,7 @@ html {
 }
 
 .design-card {
-  background: #fff;
+  background: #282828;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
@@ -386,7 +393,7 @@ html {
 .card-content h3 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
-  color: #ebe843;
+  color: #e6b002;
 }
 
 .card-content h3 i {
@@ -418,7 +425,6 @@ html {
 /* Real Estate Section */
 .real-estate {
   padding: 4rem 0;
-  background: linear-gradient(135deg, #f9f9f9, #eaeaea);
 }
 
 .real-estate h2 {
@@ -442,7 +448,7 @@ html {
 }
 
 .real-estate-card {
-  background: #fff;
+  background: #282828;
   border-radius: 15px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   padding: 2rem;
@@ -458,7 +464,7 @@ html {
 .real-estate-card .icon {
   font-size: 3rem; /* Adjust icon size */
   margin-bottom: 1rem;
-  color: #ebe843; /* Icon color */
+  color: #e6b002; /* Icon color */
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -470,7 +476,7 @@ html {
 .real-estate-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #ebe843;
+  color: #e6b002;
 }
 
 .real-estate-card p {
@@ -493,10 +499,10 @@ html {
   }
 }
   
- /* Gallery Section */
+/* Gallery Section */
 .gallery {
   padding: 4rem 0;
-  background: #f9f9f9;
+  background: #fff;
 }
 
 .gallery h2 {
@@ -516,56 +522,19 @@ html {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-item img {
+.gallery-grid img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.1); /* Zoom effect on hover */
-}
-
-.gallery-item .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
-  color: #fff;
-  padding: 1rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
-}
-
-.gallery-item:hover .overlay {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.gallery-item .overlay h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #ebe843;
-}
-
-.gallery-item .overlay p {
-  font-size: 0.9rem;
-  color: #fff;
+.gallery-grid img:hover {
+  transform: scale(1.05);
 }
 
 /* Responsive Gallery Section */
@@ -578,23 +547,23 @@ html {
     font-size: 1rem;
   }
 
-  .gallery-grid {
-    gap: 1rem;
+  .gallery-grid img {
+    height: 150px;
   }
 }
   
   /* Contact Section */
 .contact {
   padding: 4rem 0;
-  background: linear-gradient(135deg, #ebe843, #e55d50);
-  color: #fff;
+  background: linear-gradient(135deg, #e6b002, #e55d50);
+  color: #000000;
 }
 
 .contact h2 {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2.5rem;
-  color: #fff;
+  color: #000000;
 }
 
 .contact-wrapper {
@@ -628,7 +597,7 @@ html {
 
 .info-card i {
   font-size: 2rem;
-  color: #fff;
+  color: #000000;
 }
 
 .info-card div p {
@@ -637,7 +606,7 @@ html {
 }
 
 .info-card div p a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -672,7 +641,7 @@ html {
   border: none;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  color: #000000;
   font-size: 1rem;
   transition: background 0.3s ease;
 }
@@ -684,8 +653,8 @@ html {
 }
 
 #contact-form button {
-  background: #fff;
-  color: #ebe843;
+  background: #000000;
+  color: #e6b002;
   padding: 1rem;
   border: none;
   border-radius: 5px;
@@ -713,7 +682,7 @@ html {
   /* Footer */
   footer {
     background: #333;
-    color: #fff;
+    color: #000000;
     text-align: center;
     padding: 1rem 0;
   }
@@ -725,7 +694,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff; /* Background color of the loader */
+  background: #000000; /* Background color of the loader */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -744,7 +713,7 @@ html {
 .spinner div {
   width: 15px;
   height: 15px;
-  background: #ebe843;
+  background: #e6b002;
   border-radius: 50%;
   animation: bounce 1s infinite alternate;
 }
