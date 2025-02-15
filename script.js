@@ -31,8 +31,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
-// Show Loader
+// Hide Loader When Page Loads
 window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
-  loader.style.display = 'none'; // Hide loader after page loads
+  loader.style.display = 'none'; // Hide the loader
 });
