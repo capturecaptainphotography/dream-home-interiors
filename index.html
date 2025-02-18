@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dream Home Interiors</title>
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Transform your space with Dream Home Interiors. Expert interior design, construction, and real estate services in Nellore.">
-  <meta name="keywords" content="interior design, home renovation, construction services, real estate, nellore">
-  <meta name="author" content="Dream Home Interiors">
-  <meta property="og:title" content="Dream Home Interiors - Transform Your Space">
-  <meta property="og:description" content="Expert interior design, construction, and real estate services in Nellore.">
-  <meta property="og:image" content="assets/logo.png">
-  <meta property="og:url" content="https://www.dreamhomeinteriors.com">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
-<link rel="shortcut icon" href="favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-<link rel="manifest" href="favicon/site.webmanifest" />
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Transform your space with Dream Home Interiors. Expert interior design, construction, and real estate services in Nellore.">
+    <meta name="keywords" content="best interior designers in Nellore, home renovation services, construction company Nellore, real estate services Nellore">
+    <meta name="author" content="Dream Home Interiors">
+    <meta property="og:title" content="Dream Home Interiors - Transform Your Space in Nellore">
+    <meta property="og:description" content="Expert interior design, construction, and real estate services in Nellore.">
+    <meta property="og:image" content="assets/logo.png">
+    <meta property="og:url" content="https://www.dreamhomeinteriorsnellore.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://www.dreamhomeinteriorsnellore.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
   
-  <script type="application/ld+json">
+    <!-- Schema Markup for Construction Services -->
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -68,8 +69,26 @@
       }
     }
     </script>
-
-</head>
+  
+    <!-- Schema Markup for Interior Design Services -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Interior Design Services",
+      "description": "Transform your space with our expert interior design services.",
+      "serviceType": "Interior Design",
+      "provider": {
+        "@type": "Organization",
+        "name": "Dream Home Interiors"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Nellore"
+      }
+    }
+    </script>
+  </head>
 <body>
   <!-- Loader -->
 <!-- <div id="loader">
@@ -82,14 +101,15 @@
   <header>
     <div class="container">
       <div class="logo">
+        <a href="#home" title="Dream Home Interiors - Home">
         <img src="assets/logo.png" alt="Dream Home Interiors Logo">
       </div>
       <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul aria-label="Main Navigation">
+          <li><a href="#home" title="Go to Home Section">Home</a></li>
+        <li><a href="#services" title="Explore Our Services">Services</a></li>
+        <li><a href="#gallery" title="View Our Gallery">Gallery</a></li>
+        <li><a href="#contact" title="Contact Us">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -98,57 +118,85 @@
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-content">
+      <!-- Main Heading -->
       <h1>Welcome to Dream Home Interiors</h1>
-      <p>Your dream home starts here. Transform your space with our expert interior design services.</p>
-      <button id="explore-btn" class="btn">Explore Services</button>
+      
+      <!-- Subheading with SEO-friendly keywords -->
+      <p>Your dream home starts here. Transform your space with our expert <strong>interior design services in Nellore</strong>.</p>
+      
+      <!-- Call-to-Action Button -->
+      <button id="explore-btn" class="btn" title="Explore Our Services">Explore Services</button>
     </div>
   </section>
 
   <!-- Explore Services Popup -->
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <span class="close-btn">&times;</span>
-      <h2>Get in Touch</h2>
-      <form id="popup-form" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="bfab186b-58cd-46d5-93de-b4d4636d3f73">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="tel" name="phone" placeholder="Your Phone Number" required>
-        <button type="submit" class="btn">Submit</button>
-      </form>
-    </div>
+<!-- Explore Services Popup -->
+<div id="popup" class="popup" aria-modal="true" role="dialog">
+  <div class="popup-content">
+    <!-- Close Button -->
+    <span class="close-btn" title="Close Popup">&times;</span>
+    
+    <!-- Heading -->
+    <h2>Get in Touch</h2>
+    
+    <!-- Form -->
+    <form id="popup-form" action="https://api.web3forms.com/submit" method="POST" aria-label="Contact Form">
+      <!-- Hidden Input -->
+      <input type="hidden" name="access_key" value="bfab186b-58cd-46d5-93de-b4d4636d3f73">
+      
+      <!-- Name Field -->
+      <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+      
+      <!-- Phone Field -->
+      <input type="tel" name="phone" placeholder="Your Phone Number" required aria-label="Your Phone Number">
+      
+      <!-- Submit Button -->
+      <button type="submit" class="btn" title="Submit Your Information">Submit</button>
+    </form>
   </div>
+</div>
 
  <!-- Services Section -->
-<section id="services" class="services">
+ <section id="services" class="services">
   <div class="container">
+    <!-- Main Heading -->
     <h2>Our Services</h2>
-    <p class="section-subtitle">We provide a wide range of services to transform your space into a dream home.</p>
+    
+    <!-- Subtitle with SEO-friendly keywords -->
+    <p class="section-subtitle">We provide a wide range of services to transform your space into a dream home in Nellore.</p>
+    
+    <!-- Service Cards -->
     <div class="service-cards">
+      <!-- Card 1: Interior Design -->
       <div class="card">
         <div class="card-image">
-          <img src="assets/img1.jpg" alt="Interior Design">
+          <img src="assets/img1.jpg" alt="Customized Interior Design Services in Nellore" width="300" height="200">
           <div class="overlay">
-            <i class="fas fa-paint-brush"></i> <!-- Font Awesome Icon -->
+            <i class="fas fa-paint-brush" aria-hidden="true"></i> <!-- Font Awesome Icon -->
           </div>
         </div>
         <h3>Interior Design</h3>
         <p>Customized designs tailored to your lifestyle and preferences.</p>
       </div>
+
+      <!-- Card 2: Furniture Selection -->
       <div class="card">
         <div class="card-image">
-          <img src="assets/img2.jpg" alt="Furniture Selection">
+          <img src="assets/img2.jpg" alt="Handpicked Furniture Selection for Your Home" width="300" height="200">
           <div class="overlay">
-            <i class="fas fa-couch"></i> <!-- Font Awesome Icon -->
+            <i class="fas fa-couch" aria-hidden="true"></i> <!-- Font Awesome Icon -->
           </div>
         </div>
         <h3>Furniture Selection</h3>
         <p>Handpicked furniture that complements your space perfectly.</p>
       </div>
+
+      <!-- Card 3: Renovation -->
       <div class="card">
         <div class="card-image">
-          <img src="assets/img3.jpg" alt="Renovation">
+          <img src="assets/img3.jpg" alt="Complete Home Renovation Services in Nellore" width="300" height="200">
           <div class="overlay">
-            <i class="fas fa-tools"></i> <!-- Font Awesome Icon -->
+            <i class="fas fa-tools" aria-hidden="true"></i> <!-- Font Awesome Icon -->
           </div>
         </div>
         <h3>Renovation</h3>
@@ -161,24 +209,33 @@
 <!-- Constructions Section -->
 <section id="constructions" class="constructions">
   <div class="container">
+    <!-- Main Heading -->
     <h2>Construction Services</h2>
-    <p>We provide top-notch construction services for residential and commercial projects.</p>
+    
+    <!-- Subheading with SEO-friendly keywords -->
+    <p>We provide top-notch <strong>construction services in Nellore</strong> for residential and commercial projects.</p>
+    
     <div class="construction-grid">
+      <!-- Construction Card -->
       <div class="construction-card">
         <h3>Plans</h3>
         <ul>
-          <li>2D, 3D Plans</li>
-          <li>NUDA/Panchayat/Layout Approvals</li>
-          <li>Material & Labor Contractors</li>
-          <li>Construction/Renovation/Remodeling</li>
-          <li>100% Vastu Compliance</li>
-          <li>Flooring (All Types of Flooring Work)</li>
-          <li>Electrical & Plumbing</li>
-          <li>Painting</li>
-          <li>All Types of Construction Approvals</li>
+          <li><strong>2D, 3D Plans</strong>: Detailed architectural designs tailored to your needs.</li>
+          <li><strong>NUDA/Panchayat/Layout Approvals</strong>: Assistance with all necessary approvals.</li>
+          <li><strong>Material & Labor Contractors</strong>: Reliable sourcing and skilled labor.</li>
+          <li><strong>Construction/Renovation/Remodeling</strong>: End-to-end solutions for your projects.</li>
+          <li><strong>100% Vastu Compliance</strong>: Designs aligned with Vastu principles.</li>
+          <li><strong>Flooring (All Types of Flooring Work)</strong>: Durable and stylish flooring options.</li>
+          <li><strong>Electrical & Plumbing</strong>: Expert installation and maintenance services.</li>
+          <li><strong>Painting</strong>: Premium finishes for walls and surfaces.</li>
+          <li><strong>All Types of Construction Approvals</strong>: Streamlined approval processes.</li>
         </ul>
       </div>
       
+      <!-- Add an Image for Visual Appeal -->
+      <div class="construction-card">
+        <img src="assets/construction.jpg" alt="Construction Services in Nellore" loading="lazy">
+      </div>
     </div>
   </div>
 </section>
@@ -186,28 +243,37 @@
 <!-- Interior & Exterior Section -->
 <section id="interior-exterior" class="interior-exterior">
   <div class="container">
+    <!-- Main Heading -->
     <h2>Interior & Exterior Design</h2>
-    <p>Transform your space with our expert interior and exterior design solutions.</p>
+    
+    <!-- Subheading with SEO-friendly keywords -->
+    <p>Transform your space with our expert <strong>interior and exterior design solutions in Nellore</strong>.</p>
+    
     <div class="design-cards">
+      <!-- Design Card -->
       <div class="design-card">
         <h3>Woodwork</h3>
         <ul>
-          <li>All Kinds of Woodworks</li>
-          <li>Plywood/PVC/UPVC/Wardrobes/WPC</li>
-          <li>500/SFT</li>
-          <li>All Types of False Ceiling (Gypsum/PVC)</li>
-          <li>Modular Kitchens</li>
-          <li>Wallpapers/Wall Paneling</li>
-          <li>Polygranite/UPVC Sheets</li>
-          <li>PVC/UPVC/Aluminium Doors & Windows</li>
-          <li>S.S Railing Works/Steel/Iron</li>
-          <li>ACP Sheets Works</li>
-          <li>Lift Services/New Installation</li>
-          <li>Lightning/Glass Works</li>
-          <li>A to Z All Types of Home Services</li>
+          <li><strong>All Kinds of Woodworks</strong>: Custom designs to suit your style.</li>
+          <li><strong>Plywood/PVC/UPVC/Wardrobes/WPC</strong>: Durable and stylish options.</li>
+          <li><strong>500/SFT</strong>: Competitive pricing for premium quality.</li>
+          <li><strong>All Types of False Ceiling (Gypsum/PVC)</strong>: Modern and functional ceiling solutions.</li>
+          <li><strong>Modular Kitchens</strong>: Space-saving and elegant kitchen designs.</li>
+          <li><strong>Wallpapers/Wall Paneling</strong>: Add elegance and texture to your walls.</li>
+          <li><strong>Polygranite/UPVC Sheets</strong>: Durable and weather-resistant materials.</li>
+          <li><strong>PVC/UPVC/Aluminium Doors & Windows</strong>: Energy-efficient and stylish options.</li>
+          <li><strong>S.S Railing Works/Steel/Iron</strong>: Strong and aesthetic railing solutions.</li>
+          <li><strong>ACP Sheets Works</strong>: Sleek and modern exterior finishes.</li>
+          <li><strong>Lift Services/New Installation</strong>: Elevate your property's functionality.</li>
+          <li><strong>Lightning/Glass Works</strong>: Brighten your space with innovative designs.</li>
+          <li><strong>A to Z All Types of Home Services</strong>: Comprehensive solutions for every need.</li>
         </ul>
       </div>
       
+      <!-- Add an Image for Visual Appeal -->
+      <div class="design-card">
+        <img src="assets/interior-exterior.jpg" alt="Interior and Exterior Design Services in Nellore" loading="lazy">
+      </div>
     </div>
   </div>
 </section>
@@ -215,123 +281,157 @@
 <!-- Real Estate Section -->
 <section id="real-estate" class="real-estate">
   <div class="container">
+    <!-- Main Heading -->
     <h2>Real Estate Services</h2>
-    <p>Find your dream property with our trusted real estate solutions.</p>
+    
+    <!-- Subheading with SEO-friendly keywords -->
+    <p>Find your dream property in <strong>Nellore</strong> with our trusted real estate solutions.</p>
+    
     <div class="real-estate-grid">
+      <!-- Real Estate Card -->
       <div class="real-estate-card">
         <h3>Property Services</h3>
         <ul>
-          <li>Lands/Plots/House: Buying/Selling Services</li>
-          <li>Open Plots</li>
-          <li>Flats/Shops/Offices</li>
-          <li>New/Old House (Independent & Apartments)</li>
-          <li>Agricultural/Farmland</li>
-          <li>Commercial/Industrial Lands</li>
-          <li>Commercial Properties</li>
+          <li><strong>Lands/Plots/House: Buying/Selling Services</strong>: Expert assistance in purchasing or selling properties.</li>
+          <li><strong>Open Plots</strong>: Prime plots available for residential and commercial use.</li>
+          <li><strong>Flats/Shops/Offices</strong>: Wide range of options to suit your needs.</li>
+          <li><strong>New/Old House (Independent & Apartments)</strong>: Explore both new constructions and resale homes.</li>
+          <li><strong>Agricultural/Farmland</strong>: Ideal properties for farming and investment purposes.</li>
+          <li><strong>Commercial/Industrial Lands</strong>: Spaces designed for business growth and industrial use.</li>
+          <li><strong>Commercial Properties</strong>: Offices, retail spaces, and more for your business needs.</li>
         </ul>
       </div>
       
+      <!-- Add an Image for Visual Appeal -->
+      <div class="real-estate-card">
+        <img src="assets/real_estate.jpg" alt="Real Estate Services in Nellore" loading="lazy">
+      </div>
     </div>
   </div>
 </section>
 
  <!-- Gallery Section -->
-<section id="gallery" class="gallery">
+ <section id="gallery" class="gallery">
   <div class="container">
+    <!-- Main Heading -->
     <h2>Our Gallery</h2>
-    <p>Explore our stunning projects and designs that bring spaces to life.</p>
+    
+    <!-- Subheading with SEO-friendly keywords -->
+    <p>Explore our stunning <strong>interior design and construction projects in Nellore</strong> that bring spaces to life.</p>
+    
     <div class="gallery-grid">
-      <!-- Dynamically Add Images -->
-      <img src="assets/photo_1_2025-02-16_01-48-34.jpg" alt="Project 1">
-      <img src="assets/photo_2_2025-02-16_01-48-34.jpg" alt="Project 2">
-      <img src="assets/photo_3_2025-02-16_01-48-34.jpg" alt="Project 3">
-      <img src="assets/photo_4_2025-02-16_01-48-34.jpg" alt="Project 4">
-      <img src="assets/photo_5_2025-02-16_01-48-34.jpg" alt="Project 5">
-      <img src="assets/photo_6_2025-02-16_01-48-34.jpg" alt="Project 6">
-      <img src="assets/photo_7_2025-02-16_01-48-34.jpg" alt="Project 7">
-      <img src="assets/photo_8_2025-02-16_01-48-34.jpg" alt="Project 8">
-      <img src="assets/photo_9_2025-02-16_01-48-34.jpg" alt="Project 9">
-      <img src="assets/photo_10_2025-02-16_01-48-34.jpg" alt="Project 10">
-      <img src="assets/photo_11_2025-02-16_01-48-34.jpg" alt="Project 11">
-      <img src="assets/photo_12_2025-02-16_01-48-34.jpg" alt="Project 12">
-      <img src="assets/photo_13_2025-02-16_01-48-34.jpg" alt="Project 13">
-      <img src="assets/photo_14_2025-02-16_01-48-34.jpg" alt="Project 14">
-      <img src="assets/photo_15_2025-02-16_01-48-34.jpg" alt="Project 15">
-      <img src="assets/photo_16_2025-02-16_01-48-34.jpg" alt="Project 16">
-      <img src="assets/photo_17_2025-02-16_01-48-34.jpg" alt="Project 17">
-      <img src="assets/photo_18_2025-02-16_01-48-34.jpg" alt="Project 18">
-      <img src="assets/photo_19_2025-02-16_01-48-34.jpg" alt="Project 19">
-      <img src="assets/photo_20_2025-02-16_01-48-34.jpg" alt="Project 20">
-      <img src="assets/photo_21_2025-02-16_01-48-34.jpg" alt="Project 21">
-      <img src="assets/photo_22_2025-02-16_01-48-34.jpg" alt="Project 22">
-      <img src="assets/photo_23_2025-02-16_01-48-34.jpg" alt="Project 23">
-      <img src="assets/photo_24_2025-02-16_01-48-34.jpg" alt="Project 24">
-      <img src="assets/photo_25_2025-02-16_01-48-34.jpg" alt="Project 25">
-      <img src="assets/photo_26_2025-02-16_01-48-34.jpg" alt="Project 26">
-      <img src="assets/photo_27_2025-02-16_01-48-34.jpg" alt="Project 27">
-      <img src="assets/photo_28_2025-02-16_01-48-34.jpg" alt="Project 28">
-      <img src="assets/photo_29_2025-02-16_01-48-34.jpg" alt="Project 29">
-      <img src="assets/photo_30_2025-02-16_01-48-34.jpg" alt="Project 30">
+      <!-- Dynamically Add Images with Descriptive Alt Text -->
+      <img src="assets/photo_1_2025-02-16_01-48-34.jpg" alt="Modern Living Room Design in Nellore" loading="lazy">
+      <img src="assets/photo_2_2025-02-16_01-48-34.jpg" alt="Kitchen Renovation Project in Nellore" loading="lazy">
+      <img src="assets/photo_3_2025-02-16_01-48-34.jpg" alt="Cozy Bedroom Design in Nellore" loading="lazy">
+      <img src="assets/photo_4_2025-02-16_01-48-34.jpg" alt="Outdoor Space Transformation in Nellore" loading="lazy">
+      <img src="assets/photo_5_2025-02-16_01-48-34.jpg" alt="Bathroom Remodeling Project in Nellore" loading="lazy">
+      <img src="assets/photo_6_2025-02-16_01-48-34.jpg" alt="Office Interior Design in Nellore" loading="lazy">
+      <img src="assets/photo_7_2025-02-16_01-48-34.jpg" alt="Residential Construction Project in Nellore" loading="lazy">
+      <img src="assets/photo_8_2025-02-16_01-48-34.jpg" alt="Commercial Space Design in Nellore" loading="lazy">
+      <img src="assets/photo_9_2025-02-16_01-48-34.jpg" alt="Vastu-Compliant Home Design in Nellore" loading="lazy">
+      <img src="assets/photo_10_2025-02-16_01-48-34.jpg" alt="Luxury Apartment Interior in Nellore" loading="lazy">
+      <img src="assets/photo_11_2025-02-16_01-48-34.jpg" alt="Modular Kitchen Installation in Nellore" loading="lazy">
+      <img src="assets/photo_12_2025-02-16_01-48-34.jpg" alt="Elegant False Ceiling Design in Nellore" loading="lazy">
+      <img src="assets/photo_13_2025-02-16_01-48-34.jpg" alt="Woodwork and Wardrobe Design in Nellore" loading="lazy">
+      <img src="assets/photo_14_2025-02-16_01-48-34.jpg" alt="Exterior Design for a Residential Property in Nellore" loading="lazy">
+      <img src="assets/photo_15_2025-02-16_01-48-34.jpg" alt="Farmhouse Renovation Project in Nellore" loading="lazy">
+      <img src="assets/photo_16_2025-02-16_01-48-34.jpg" alt="Industrial Space Design in Nellore" loading="lazy">
+      <img src="assets/photo_17_2025-02-16_01-48-34.jpg" alt="Open Plot Development in Nellore" loading="lazy">
+      <img src="assets/photo_18_2025-02-16_01-48-34.jpg" alt="Duplex Home Design in Nellore" loading="lazy">
+      <img src="assets/photo_19_2025-02-16_01-48-34.jpg" alt="Contemporary Bathroom Design in Nellore" loading="lazy">
+      <img src="assets/photo_20_2025-02-16_01-48-34.jpg" alt="Balcony Space Transformation in Nellore" loading="lazy">
+      <img src="assets/photo_21_2025-02-16_01-48-34.jpg" alt="Stylish PVC Doors and Windows in Nellore" loading="lazy">
+      <img src="assets/photo_22_2025-02-16_01-48-34.jpg" alt="Wallpaper and Wall Paneling Design in Nellore" loading="lazy">
+      <img src="assets/photo_23_2025-02-16_01-48-34.jpg" alt="Glass Railing Installation in Nellore" loading="lazy">
+      <img src="assets/photo_24_2025-02-16_01-48-34.jpg" alt="Lift Installation for Residential Building in Nellore" loading="lazy">
+      <img src="assets/photo_25_2025-02-16_01-48-34.jpg" alt="ACP Sheet Cladding Work in Nellore" loading="lazy">
+      <img src="assets/photo_26_2025-02-16_01-48-34.jpg" alt="Electrical and Plumbing Services in Nellore" loading="lazy">
+      <img src="assets/photo_27_2025-02-16_01-48-34.jpg" alt="Painting Services for Homes in Nellore" loading="lazy">
+      <img src="assets/photo_28_2025-02-16_01-48-34.jpg" alt="Flooring Work for Commercial Spaces in Nellore" loading="lazy">
+      <img src="assets/photo_29_2025-02-16_01-48-34.jpg" alt="Panchayat-Approved Construction in Nellore" loading="lazy">
+      <img src="assets/photo_30_2025-02-16_01-48-34.jpg" alt="Complete Home Renovation in Nellore" loading="lazy">
     </div>
   </div>
 </section>
-
-  <!-- Contact Section -->
 <section id="contact" class="contact">
   <div class="container">
+    <!-- Main Heading -->
     <h2>Contact Us</h2>
+    
     <div class="contact-wrapper">
       <!-- Left Side: Contact Details -->
       <div class="contact-info">
+        <!-- Phone Info -->
         <div class="info-card">
           <i class="fa-solid fa-phone"></i>
           <div>
             <p><strong>Phone:</strong></p>
-            <p><a href="tel:+919666966053">+91 9666966053</a></p>
-            <p><a href="tel:+919700505058">+91 9700505058</a></p>
+            <p><a href="tel:+919666966053" title="Call +91 9666966053">+91 9666966053</a></p>
+            <p><a href="tel:+919700505058" title="Call +91 9700505058">+91 9700505058</a></p>
           </div>
         </div>
+
+        <!-- Address Info -->
         <div class="info-card">
           <i class="fa-solid fa-location-dot"></i>
           <div>
             <p><strong>Address:</strong></p>
-            <p>Beside NUDA Office, B.V. Nagar, Nellore</p>
+            <p>
+              Beside NUDA Office,<br>
+              B.V. Nagar, Nellore,<br>
+              Pin Code: 524004
+            </p>
           </div>
         </div>
+
+        <!-- Email Info -->
         <div class="info-card">
           <i class="fa-solid fa-envelope"></i>
           <div>
             <p><strong>Email:</strong></p>
-            <p><a href="mailto:dreamhomeservices.in@gmail.com">dreamhomeservices.in@gmail.com</a></p>
+            <p><a href="mailto:dreamhomeservices.in@gmail.com" title="Email us at dreamhomeservices.in@gmail.com">dreamhomeservices.in@gmail.com</a></p>
           </div>
         </div>
       </div>
-
-      <!-- Right Side: Contact Form -->
-      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="bfab186b-58cd-46d5-93de-b4d4636d3f73">
-        <div class="form-group">
-          <input type="text" name="name" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-          <input type="email" name="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
     </div>
   </div>
 </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Dream Home Interiors. All rights reserved.</p>
-    </div>
-  </footer>
+      <!-- Right Side: Contact Form -->
+<form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+  <!-- Hidden Input for Web3Forms Access Key -->
+  <input type="hidden" name="access_key" value="bfab186b-58cd-46d5-93de-b4d4636d3f73">
 
-  <script src="script.js"></script>
+  <!-- Name Field -->
+  <div class="form-group">
+    <label for="name" class="sr-only">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+  </div>
+
+  <!-- Email Field -->
+  <div class="form-group">
+    <label for="email" class="sr-only">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
+  </div>
+
+  <!-- Message Field -->
+  <div class="form-group">
+    <label for="message" class="sr-only">Your Message</label>
+    <textarea id="message" name="message" placeholder="Your Message" rows="5" required aria-required="true"></textarea>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit" class="btn" aria-label="Send Message">Send Message</button>
+</form>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Dream Home Interiors. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

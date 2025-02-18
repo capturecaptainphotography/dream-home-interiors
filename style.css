@@ -143,6 +143,11 @@ html {
   z-index: 1000;
 }
 
+
+
+
+
+
 .popup-content {
   background: #2e2e2e;
   padding: 2rem;
@@ -691,4 +696,34 @@ html {
   font-size: 1.2rem;
   color: #333;
   font-weight: bold;
+}
+.construction-card img {
+  width: 100%; /* Make the image responsive by scaling it to the card's width */
+  height: 100%; /* Maintain the aspect ratio of the image */
+  display: block; /* Remove any extra space below the image */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.construction-card img:hover {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+.design-card img {
+  width: 100%; /* Make the image responsive by scaling it to the card's width */
+  height: 100%; /* Maintain the aspect ratio of the image */
+  display: block; /* Remove any extra space below the image */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.design-card img:hover {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+.real-estate-card img {
+  width: 100%; /* Make the image responsive by scaling it to the card's width */
+  height: 100%; /* Maintain the aspect ratio of the image */
+  display: block; /* Remove any extra space below the image */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.real-estate-card img:hover {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
 }
