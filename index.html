@@ -15,7 +15,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://www.dreamhomeinteriorsnellore.com">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
@@ -89,6 +89,60 @@
       }
     }
     </script>
+    <style>
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/photo_75_2025-02-16_01-48-34.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      text-align: center;
+      align-content: center;
+      justify-content: center;
+    }
+    
+    .hero-content {
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .btn {
+      /* background: #757272;
+      color: #e6b002; */
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    
+    .btn:hover {
+      background: #e55d50;
+      color: #000000;
+    }
+    
+    /* Responsive Hero Section */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
   </head>
 <body>
   <!-- Loader -->
@@ -171,7 +225,7 @@
       <!-- Card 1: Interior Design -->
       <div class="card">
         <div class="card-image">
-          <img src="assets/img1.jpg" alt="Customized Interior Design Services in Nellore" width="300" height="200">
+          <img src="assets/img1.jpg" alt="Customized Interior Design Services in Nellore" width="300" height="200"loading="lazy">
           <div class="overlay">
             <i class="fas fa-paint-brush" aria-hidden="true"></i> <!-- Font Awesome Icon -->
           </div>
@@ -183,7 +237,7 @@
       <!-- Card 2: Furniture Selection -->
       <div class="card">
         <div class="card-image">
-          <img src="assets/img2.jpg" alt="Handpicked Furniture Selection for Your Home" width="300" height="200">
+          <img src="assets/img2.jpg" alt="Handpicked Furniture Selection for Your Home" width="300" height="200"loading="lazy">
           <div class="overlay">
             <i class="fas fa-couch" aria-hidden="true"></i> <!-- Font Awesome Icon -->
           </div>
@@ -195,7 +249,7 @@
       <!-- Card 3: Renovation -->
       <div class="card">
         <div class="card-image">
-          <img src="assets/img3.jpg" alt="Complete Home Renovation Services in Nellore" width="300" height="200">
+          <img src="assets/img3.jpg" alt="Complete Home Renovation Services in Nellore" width="300" height="200" loading="lazy">
           <div class="overlay">
             <i class="fas fa-tools" aria-hidden="true"></i> <!-- Font Awesome Icon -->
           </div>
@@ -433,6 +487,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js"defer></script>
 </body>
 </html>
