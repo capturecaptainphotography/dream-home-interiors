@@ -5,7 +5,6 @@ User-agent: *
 Disallow: /admin/
 Disallow: /private/
 
-
 # Allow crawling of important sections
 Allow: /
 Allow: /home
@@ -13,8 +12,7 @@ Allow: /services
 Allow: /gallery
 Allow: /contact
 Allow: /assets/
-allow: /favicon/
+Allow: /favicon/
 
-
-# Specify the location of the sitemap (if you have one)
+# Specify the location of the sitemap
 Sitemap: https://www.dreamhomeinteriorsnellore.com/sitemap.xml
