@@ -1,0 +1,20 @@
+# Allow all bots to crawl the site
+User-agent: *
+
+# Disallow specific directories or files (if needed)
+Disallow: /admin/
+Disallow: /private/
+
+
+# Allow crawling of important sections
+Allow: /
+Allow: /home
+Allow: /services
+Allow: /gallery
+Allow: /contact
+Allow: /assets/
+allow: /favicon/
+
+
+# Specify the location of the sitemap (if you have one)
+Sitemap: https://www.dreamhomeinteriorsnellore.com/sitemap.xml
